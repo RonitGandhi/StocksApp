@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:layout_margin="10dp"
+    tools:context=".Stocks">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/get_stock"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:hint="Enter stock ticker here"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+        <Button
+            android:id="@+id/go"
+            android:background="@drawable/button_go"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Go"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            app:cardCornerRadius="20dp"
+            android:layout_height="100dp">
+            <TextView
+                android:id="@+id/symbol"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="20dp"
+                android:paddingTop="40dp"
+                android:textSize="20dp"
+                android:hint="Symbol"
+                android:background="@color/teal_200"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            app:cardCornerRadius="20dp"
+            android:layout_height="100dp">
+            <TextView
+                android:id="@+id/open"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="20dp"
+                android:paddingTop="40dp"
+                android:textSize="20dp"
+                android:hint="Open price"
+                android:background="@color/teal_200"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            app:cardCornerRadius="20dp"
+            android:layout_height="100dp">
+            <TextView
+                android:id="@+id/high"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="20dp"
+                android:paddingTop="40dp"
+                android:textSize="20dp"
+                android:hint="High Price"
+                android:background="@color/teal_200"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            app:cardCornerRadius="20dp"
+            android:layout_height="100dp">
+            <TextView
+                android:id="@+id/low"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="20dp"
+                android:paddingTop="40dp"
+                android:textSize="20dp"
+                android:hint="Low Price"
+                android:background="@color/teal_200"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            app:cardCornerRadius="20dp"
+            android:layout_height="100dp">
+            <TextView
+                android:id="@+id/end_price"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="20dp"
+                android:paddingTop="40dp"
+                android:textSize="20dp"
+                android:hint="End Price"
+                android:background="@color/teal_200"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            app:cardCornerRadius="20dp"
+            android:layout_height="100dp">
+            <TextView
+                android:id="@+id/volume"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="20dp"
+                android:paddingTop="40dp"
+                android:textSize="20dp"
+                android:hint="Volume"
+                android:background="@color/teal_200"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            app:cardCornerRadius="20dp"
+            android:layout_height="100dp">
+            <TextView
+                android:id="@+id/trading_day"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="20dp"
+                android:paddingTop="40dp"
+                android:textSize="20dp"
+                android:hint="Last Trading Day"
+                android:background="@color/teal_200"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            app:cardCornerRadius="20dp"
+            android:layout_height="100dp">
+            <TextView
+                android:id="@+id/prev_close"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="20dp"
+                android:paddingTop="40dp"
+                android:textSize="20dp"
+                android:hint="Previous Close"
+                android:background="@color/teal_200"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            app:cardCornerRadius="20dp"
+            android:layout_height="100dp">
+            <TextView
+                android:id="@+id/change_rupees"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="20dp"
+                android:paddingTop="40dp"
+                android:textSize="20dp"
+                android:hint="Change in rupees"
+                android:background="@color/teal_200"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            app:cardCornerRadius="20dp"
+            android:layout_height="100dp">
+            <TextView
+                android:id="@+id/change_percent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="20dp"
+                android:paddingTop="40dp"
+                android:textSize="20dp"
+                android:hint="Change in percent"
+                android:background="@color/teal_200"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+
+
+    </LinearLayout>
+</ScrollView>
