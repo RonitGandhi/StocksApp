@@ -59,7 +59,7 @@ public class Stocks extends AppCompatActivity {
 
 
         String stock = name_stock.getText().toString().toUpperCase(Locale.ENGLISH);
-        String URL = "https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol="+stock+"."+endpoint+"&apikey=N702KT0SWG6ZADTY";
+        String URL = "https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol="+stock+"."+endpoint+"&apikey=YOUR_API_KEY";
         RequestQueue queue = Volley.newRequestQueue(getApplicationContext());
 
         JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, URL, null, new Response.Listener<JSONObject>() {

@@ -46,7 +46,7 @@ public class Crypto extends AppCompatActivity {
 
     private void getDataCrypto() {
         String crypto = crypto_text.getText().toString();
-        String URL = "https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE&from_currency="+crypto+"&to_currency=INR&apikey=N702KT0SWG6ZADTY";
+        String URL = "https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE&from_currency="+crypto+"&to_currency=INR&apikey=YOUR_API_KEY";
         RequestQueue queue = Volley.newRequestQueue(getApplicationContext());
 
         JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, URL, null, new Response.Listener<JSONObject>() {
