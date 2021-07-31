@@ -63,10 +63,17 @@ public class Crypto extends AppCompatActivity {
                     String ask_price = jsonObject2.getString("9. Ask Price").substring(0,10);
 
                     currency_txt.setText("Name: " +name_curr);
+                    currency_txt.setBackgroundColor(getResources().getColor(R.color.teal_700));
                     exchng_txt.setText("Exchange Rate in rupees (Rs) : \n Rs "+exchange_rate);
+                    exchng_txt.setBackgroundColor(getResources().getColor(R.color.teal_700));
                     last_txt.setText("Last refreshed: " +last_refreshed);
+                    last_txt.setBackgroundColor(getResources().getColor(R.color.teal_700));
                     bid_txt.setText("Bid Price in Rs : Rs " +bid_price);
+                    bid_txt.setBackgroundColor(getResources().getColor(R.color.teal_700));
                     ask_txt.setText("Ask Price in Rs : Rs " +ask_price);
+                    ask_txt.setBackgroundColor(getResources().getColor(R.color.teal_700));
+
+
 
 
                 } catch (JSONException e) {

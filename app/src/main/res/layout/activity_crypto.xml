@@ -6,10 +6,11 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_margin="10dp"
-
+    android:background="@color/white"
     tools:context=".Crypto">
 
     <LinearLayout
+        android:background="@color/white"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -19,12 +20,15 @@
             android:id="@+id/get_crypto"
             android:layout_width="match_parent"
             android:layout_height="70dp"
+            android:textColorHint="#D74A4A4A"
+            android:background="@drawable/custom_button"
             android:hint="Enter crypto ticker here"
             android:textStyle="bold"
             android:textColor="@color/black"
             android:layout_marginTop="10dp"/>
         <Button
             android:id="@+id/go"
+            android:layout_marginTop="10dp"
             android:background="@drawable/button_go"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -41,12 +45,11 @@
                 android:id="@+id/name_currency"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/teal_200"
-                android:hint="Currency name"
                 android:paddingLeft="20dp"
                 android:paddingTop="40dp"
                 android:textColor="@color/black"
                 android:textSize="20dp"
+                android:backgroundTint="@null"
                 android:textStyle="bold" />
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
@@ -61,8 +64,7 @@
                 android:paddingLeft="20dp"
                 android:paddingTop="40dp"
                 android:textSize="20dp"
-                android:hint="Excahnge Rate"
-                android:background="@color/teal_200"
+                android:backgroundTint="@null"
                 android:textStyle="bold"
                 android:textColor="@color/black"/>
         </androidx.cardview.widget.CardView>
@@ -78,8 +80,7 @@
                 android:paddingLeft="20dp"
                 android:paddingTop="40dp"
                 android:textSize="20dp"
-                android:hint="Last refreshed date and time"
-                android:background="@color/teal_200"
+                android:backgroundTint="@null"
                 android:textStyle="bold"
                 android:textColor="@color/black"/>
         </androidx.cardview.widget.CardView>
@@ -95,8 +96,6 @@
                 android:paddingLeft="20dp"
                 android:paddingTop="40dp"
                 android:textSize="20dp"
-                android:hint="Bid Price"
-                android:background="@color/teal_200"
                 android:textStyle="bold"
                 android:textColor="@color/black"/>
         </androidx.cardview.widget.CardView>
@@ -112,8 +111,6 @@
                 android:paddingLeft="20dp"
                 android:paddingTop="40dp"
                 android:textSize="20dp"
-                android:hint="Ask Price"
-                android:background="@color/teal_200"
                 android:textStyle="bold"
                 android:textColor="@color/black"/>
         </androidx.cardview.widget.CardView>

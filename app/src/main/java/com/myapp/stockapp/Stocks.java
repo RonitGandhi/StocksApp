@@ -80,15 +80,25 @@ public class Stocks extends AppCompatActivity {
                     String change_percent = jsonObject.getString("10. change percent");
 
                     symbol_text.setText("Symbol: "+symbol);
+                    symbol_text.setBackgroundColor(getResources().getColor(R.color.teal_700));
                     open_txt.setText("Open price : Rs " +open_price);
+                    open_txt.setBackgroundColor(getResources().getColor(R.color.teal_700));
                     high_txt.setText("High price : Rs " +high_price);
+                    high_txt.setBackgroundColor(getResources().getColor(R.color.teal_700));
                     low_txt.setText("Low price : Rs " +low_price);
+                    low_txt.setBackgroundColor(getResources().getColor(R.color.teal_700));
                     end_txt.setText("End price : Rs " +price_end);
+                    end_txt.setBackgroundColor(getResources().getColor(R.color.teal_700));
                     volume_txt.setText("Trading volumes : "+volume);
+                    volume_txt.setBackgroundColor(getResources().getColor(R.color.teal_700));
                     last_trading.setText("Last trading day : "+last_trading_day);
+                    last_trading.setBackgroundColor(getResources().getColor(R.color.teal_700));
                     prev_text.setText("Previous closing price (Day before yesterday) : Rs " +prev_close);
+                    prev_text.setBackgroundColor(getResources().getColor(R.color.teal_700));
                     change_rs.setText("Change in Rupees (Rs) :  " +change_rupees);
+                    change_rs.setBackgroundColor(getResources().getColor(R.color.teal_700));
                     change_pr.setText("Change in percent : " +change_percent);
+                    change_pr.setBackgroundColor(getResources().getColor(R.color.teal_700));
 
                 } catch (JSONException e) {
                     e.printStackTrace();
